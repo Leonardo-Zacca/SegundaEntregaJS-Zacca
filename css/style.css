@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+p {
+  color: #1d6183 !important; }
+
+header .dropdown-item {
+  color: #C64928;
+  background-color: #033249;
+  font-family: "Merriweather", serif; }
+
+main {
+  background-image: url(https://res.cloudinary.com/dag97qsi8/image/upload/v1661992719/ProyectoFinal/BackgroundMain_dgwrhp.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+header .navbar-background {
+  background-color: #033249; }
+
+header .nav-link {
+  color: #C64928 !important;
+  font-family: "Merriweather", serif; }
+  header .nav-link:hover {
+    color: #FEA82F !important; }
+
+header .logo {
+  height: auto;
+  max-width: 10rem; }
+
+header .btn-outline-success {
+  color: #C64928;
+  border-color: #C64928; }
+  header .btn-outline-success:hover {
+    color: white;
+    border-color: #FEA82F;
+    background-color: #C64928; }
+
+main p {
+  color: #033249; }
+
+main .texto {
+  color: #C64928;
+  margin-bottom: 20px; }
+
+main .btn-primary {
+  margin: 5px;
+  background-color: #1d6183;
+  border-color: #033249; }
+
+main .card {
+  background-color: rgba(12, 11, 11, 0.774);
+  max-width: 20rem;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 20px; }
+  main .card:hover {
+    border-color: #FEA82F;
+    border-width: 1px; }
+  main .card h5 {
+    color: #C64928; }
+
+main .card-image {
+  height: auto;
+  max-width: 20rem;
+  border-radius: 10px; }
+
+main .card-button {
+  color: #C64928;
+  background-color: #033249;
+  border-radius: 5px; }
+  main .card-button:hover {
+    color: #FEA82F;
+    background-color: #1d6183;
+    border-color: #C64928; }
+
+main .card-grid {
+  display: grid;
+  gap: 1em;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+main .carousel {
+  background-color: rgba(0, 0, 0, 0.815);
+  border-radius: 10px; }
+
+main form {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px; }
+  main form h3 {
+    color: #FEA82F;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 20px; }
+  main form input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px; }
+  main form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    min-height: 100px;
+    max-height: 200px; }
+  main form select {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px; }
+  main form .boton {
+    background-color: #033249;
+    color: #C64928; }
+    main form .boton:hover {
+      border-color: #FEA82F;
+      color: #FEA82F; }
+
+main .servicios {
+  margin: 20px;
+  margin-right: 20px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.685);
+  margin-bottom: 20px;
+  border-radius: 15px; }
+
+main .textoserv {
+  color: #FEA82F !important; }
+
+footer {
+  background-color: #033249; }
+  footer p {
+    display: flex;
+    justify-content: center;
+    color: #C64928; }
+  footer .grid {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr; }
+    footer .grid div:hover {
+      border: 1px solid #FEA82F;
+      border-radius: 10px; }
+  footer .redes {
+    height: auto;
+    max-width: 3rem; }
+
+@media (max-width: 272px) {
+  footer .grid {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr; } }
+
+@media (max-width: 180px) {
+  footer .grid {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 990px) {
+  main .card-grid {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr; } }
+
+@media (max-width: 658px) {
+  main .card-grid {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 480px) {
+  main form {
+    width: 100%; } }

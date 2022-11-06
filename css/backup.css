@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos Navbar */
+.navbar-background {
+    background-color: #033249;
+}
+.nav-link {
+    color: #C64928 !important;
+}
+.nav-link:hover {
+    color: #FEA82F !important;
+}
+.dropdown-item {
+    color: #C64928;
+    background-color: #033249;
+}
+.logo {
+    height: auto;
+    max-width: 10rem;
+}
+.btn-outline-success {
+    color: #C64928;
+    border-color: #C64928;
+}
+.btn-outline-success:hover {
+    color: white;
+    border-color: #FEA82F;
+    background-color: #C64928;
+}
+/* Estilos Main */
+main {
+    background-image: url(../images/BackgroundMain.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.texto {
+    color: #C64928;
+}
+main p{
+    color: #033249;
+}
+.btn-primary {
+    margin: 5px;
+    background-color: #1d6183;
+    border-color: #033249;
+
+}
+/* Cards */
+.card {
+    background-color: rgb(202, 200, 200);
+    max-width: 20rem;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.card:hover {
+    border-color: #FEA82F;
+    border-width: 2px;
+}
+.card-image {
+    height: auto;
+    max-width: 20rem;
+    border-radius: 10px;
+    
+}
+.card-button {
+    color: #C64928;
+    background-color: #033249;
+    border-radius: 5px;
+}
+.card-button:hover {
+    color: #FEA82F;
+    background-color: #1d6183;
+    border-color: #C64928;
+}
+.card-grid{
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Estilos footer */
+footer {
+    background-color: #033249;
+}
+footer p {
+    display: flex;
+    justify-content: center;
+    color: #C64928;
+}
+.grid {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid div:hover {
+    border: 1px solid #FEA82F;
+    border-radius: 10px;
+}
+.redes {
+    height: auto;
+    max-width: 3rem;
+}
+
+
+/* Media Querys */
+@media (max-width: 272px ) {
+    .grid {
+        display: grid;
+        gap: 1em;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 180px) {
+    .grid {
+        display: grid;
+        gap: 1em;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 990px) {
+    .card-grid{
+        display: grid;
+        gap: 1em;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 658px){
+    .card-grid{
+        display: grid;
+        gap: 1em;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+}

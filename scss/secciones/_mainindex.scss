@@ -1,0 +1,8 @@
+$saludo: 55;  //las variables pueden ser tipo numérico o texto
+p{
+@if ($saludo < 50) {
+    font-size: 35px;
+} @else {
+    color: $azulclaro !important;
+}
+}

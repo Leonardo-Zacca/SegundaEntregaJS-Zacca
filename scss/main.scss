@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import './variables/colores';  //colores de letras y fondos
+@import './variables/typo';  //tipos de letras
+@import './variables/tamanios';
+@import './secciones/mainindex';
+@import './variables/extend';
+@import './variables/mixin';
+
+
+header {
+    .navbar-background {
+        background-color: $azul;
+    }
+
+    .nav-link {
+        color: $rojo  !important;
+        font-family: $serif;
+
+
+        &:hover {
+            color: $naranja  !important;
+        }
+    }
+
+    .dropdown-item {
+        @extend %dropdown-item;
+    }
+
+    .logo {
+        height: auto;
+        max-width: $logo - 10rem;
+    }
+
+    .btn-outline-success {
+        color: $rojo;
+        border-color: $rojo;
+
+        &:hover {
+            color: white;
+            border-color: $naranja;
+            background-color: $rojo;
+        }
+    }
+}
+
+main {
+    @extend %main;
+
+    p {
+        color: $azul;
+    }
+
+    .texto {
+        color: $rojo;
+        margin-bottom: 20px;
+    }
+
+    .btn-primary {
+        margin: 5px;
+        background-color: $azulclaro;
+        border-color: $azul;
+    }
+
+    //Cards
+    .card {
+        @include card(rgba(12, 11, 11, 0.774));
+        margin-bottom: 20px;
+
+        &:hover {
+            border-color: $naranja;
+            border-width: 1px;
+        }
+        h5{
+            color: $rojo;
+        }
+    }
+
+    .card-image {
+        height: auto;
+        max-width: 20rem;
+        border-radius: 10px;
+    }
+
+    .card-button {
+        color: $rojo;
+        background-color: $azul;
+        border-radius: 5px;
+
+        &:hover {
+            color: $naranja;
+            background-color: $azulclaro;
+            border-color: $rojo;
+        }
+    }
+
+    .card-grid {
+        display: grid;
+        gap: 1em;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    //Carousel
+    .carousel{
+        background-color: rgba(0, 0, 0, 0.815);
+        border-radius: 10px;
+    }
+    //Contacto
+    form{
+        width: 450px;
+        margin: auto;
+        background: rgba(0,0,0,0.4);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        border-radius: 7px;
+        h3{
+            color: $naranja;
+            text-align: center;
+            margin: 0;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        input{
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 7px;
+            box-sizing: border-box;
+            font-size: 17px;
+        }
+        textarea{
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 7px;
+            box-sizing: border-box;
+            font-size: 17px;
+            min-height: 100px;  
+            max-height: 200px; 
+        }
+        select{
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 7px;
+            box-sizing: border-box;
+            font-size: 17px;
+        }
+        .boton {
+            background-color: $azul;
+            color: $rojo;
+            &:hover{
+                border-color: $naranja;
+                color: $naranja;
+            }
+        }
+    }
+    //servicios
+    .servicios {
+        margin: 20px;
+        margin-right: 20px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.685);
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+    .textoserv {
+        color: $naranja !important;
+    }
+}
+
+footer {
+    background-color: $azul;
+
+    p {
+        display: flex;
+        justify-content: center;
+        color: $rojo;
+    }
+
+    .grid {
+        display: grid;
+        gap: 1em;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        div {
+            &:hover {
+                border: 1px solid $naranja;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .redes {
+        height: auto;
+        max-width: 3rem;
+    }
+}
+
+//Media Querys 
+@media (max-width: 272px) {
+    footer {
+        .grid {
+            display: grid;
+            gap: 1em;
+            justify-items: center;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width: 180px) {
+    footer {
+        .grid {
+            display: grid;
+            gap: 1em;
+            justify-items: center;
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    main{
+    .card-grid {
+        display: grid;
+        gap: 1em;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    }
+}
+
+@media (max-width: 658px) {
+    main{
+    .card-grid {
+        display: grid;
+        gap: 1em;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    }
+}
+
+@media (max-width: 480px){
+    main form{
+        width: 100%;
+        }
+}
